@@ -58,7 +58,7 @@
 						{{/if}}
 
 						{{if $nav.events}}
-						<a accesskey="e" role="menuitem" id="nav-events-link" href="{{$nav.events.0}}" data-toggle="tooltip" aria-label="{{$nav.events.1}}" title="{{$nav.events.1}}" class="nav-menu"><i class="fa fa-lg fa-calendar"></i></a>
+						<a accesskey="e" role="menuitem" id="nav-events-link" href="{{$nav.events.0}}" data-toggle="tooltip" aria-label="{{$nav.events.1}}" title="{{$nav.events.1}}" class="nav-menu"><i class="far fa-lg fa-calendar-alt"></i></a>
 						{{/if}}
 
 						{{if $nav.contacts}}
