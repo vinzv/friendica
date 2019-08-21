@@ -1518,10 +1518,12 @@ textarea.comment-edit-text:focus + .comment-edit-form .preview {
 
 .fa.lock:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f023";
 }
 .fa.unlock:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f09c";
 }
 
@@ -1872,7 +1874,7 @@ code > .hl-main {
 }
 .oembed.video .embed_video > div::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
     display: inline-block;
     text-decoration: inherit;
@@ -2907,11 +2909,13 @@ ul li:hover .contact-wrapper .contact-action-link:hover {
 }
 .panel .section-subtitle-wrapper a.accordion-toggle:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f0d7";
     padding-right: 5px;
 }
 .panel .section-subtitle-wrapper a.accordion-toggle.collapsed:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f0da";
 }
 #settings-nick-wrapper {
@@ -2957,10 +2961,12 @@ ul li:hover .contact-wrapper .contact-action-link:hover {
 }
 .settings-block.fakelink > h3:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f0da"; /* Right Plain Pointer */
 }
 .settings-block > .fakelink > h3:before {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f0d7"; /* Bottom Plain Pointer */
 }
 
@@ -3154,6 +3160,7 @@ section.help-content-wrapper li {
 }
 #adminpage li .icon.on:after {
     font-family: "Font Awesome 5 Free";
+	font-weight: 900;
     content: "\f00c";
     display: inline-block;
     position: absolute;
