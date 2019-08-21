@@ -25,15 +25,15 @@
 				{{* Buttons for the mobile view *}}
 				<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="offcanvas" data-target="#myNavmenu" aria-controls="myNavmenu" aria-haspopup="true">
 					<span class="sr-only">Toggle navigation</span>
-					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					<i class="fas fa-ellipsis-v" aria-hidden="true"></i>
 				</button>
 				<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#search-mobile" aria-expanded="false" aria-controls="search-mobile">
 					<span class="sr-only">Toggle Search</span>
-					<i class="fa fa-search" aria-hidden="true" style="color:#FFF;"></i>
+					<i class="fas fa-search" aria-hidden="true" style="color:#FFF;"></i>
 				</button>
 				<button type="button" class="navbar-toggle collapsed pull-left visible-sm visible-xs" data-toggle="offcanvas" data-target="aside" aria-haspopup="true">
 					<span class="sr-only">Toggle navigation</span>
-					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					<i class="fas fa-ellipsis-v" aria-hidden="true"></i>
 				</button>
 
 				{{* Left section of the NavBar with navigation shortcuts/icons *}}
@@ -54,7 +54,7 @@
 
 					<li id="nav-personal" class="nav-segment hidden-xs" role="presentation">
 						{{if $nav.messages}}
-						<a role="menuitem" id="nav-messages-link" href="{{$nav.messages.0}}" data-toggle="tooltip" aria-label="{{$nav.messages.1}}" title="{{$nav.messages.1}}" class="nav-menu {{$sel.messages}}"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><span id="mail-update" class="nav-mail-badge badge nav-notify"></span></a>
+						<a role="menuitem" id="nav-messages-link" href="{{$nav.messages.0}}" data-toggle="tooltip" aria-label="{{$nav.messages.1}}" title="{{$nav.messages.1}}" class="nav-menu {{$sel.messages}}"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i><span id="mail-update" class="nav-mail-badge badge nav-notify"></span></a>
 						{{/if}}
 
 						{{if $nav.events}}
@@ -62,7 +62,7 @@
 						{{/if}}
 
 						{{if $nav.contacts}}
-						<a role="menuitem" id="nav-contacts-link" class="nav-menu {{$sel.contacts}} {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" data-toggle="tooltip" aria-label="{{$nav.contacts.1}}" title="{{$nav.contacts.1}}" ><i class="fa fa-users fa-lg" aria-hidden="true"></i></a>
+						<a role="menuitem" id="nav-contacts-link" class="nav-menu {{$sel.contacts}} {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" data-toggle="tooltip" aria-label="{{$nav.contacts.1}}" title="{{$nav.contacts.1}}" ><i class="fas fa-users fa-lg" aria-hidden="true"></i></a>
 						<span id="intro-update" class="nav-intro-badge badge nav-notify" onclick="window.location.href = '{{$nav.introductions.0}}' " data-toggle="tooltip" aria-label="{{$nav.introductions.3}}" title="{{$nav.introductions.3}}"></span>
 						{{/if}}
 					</li>
@@ -71,7 +71,7 @@
 					{{if $nav.notifications}}
 						<li id="nav-notification" class="nav-segment hidden-xs" role="presentation">
 							<a href="{{$nav.notifications.0}}" rel="#nav-notifications-menu" data-toggle="tooltip" aria-label="{{$nav.notifications.1}}" title="{{$nav.notifications.1}}" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i>
+								<i class="fas fa-exclamation-circle fa-lg" aria-hidden="true"></i>
 								<span role="menuitem" class="sr-only">{{$nav.notifications.1}}</span>
 								<span id="notify-update" class="nav-notify-badge badge nav-notify dropdown" data-toggle="dropdown"></span>
 							</a>
@@ -140,42 +140,42 @@
 							{{/foreach}}
 							<li role="presentation" class="divider"></li>
 							{{if $nav.notifications}}
-							<li role="presentation"><a role="menuitem" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
+							<li role="presentation"><a role="menuitem" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fas fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
 							{{/if}}
 							{{if $nav.messages}}
-							<li role="presentation"><a role="menuitem" class="nav-commlink {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}} <span id="mail-update-li" class="nav-mail-badge badge nav-notify"></span></a></li>
+							<li role="presentation"><a role="menuitem" class="nav-commlink {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fas fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}} <span id="mail-update-li" class="nav-mail-badge badge nav-notify"></span></a></li>
 							{{/if}}
 							<li role="presentation" class="divider"></li>
 							{{if $nav.contacts}}
-							<li role="presentation"><a role="menuitem" id="nav-menu-contacts-link" class="nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fa fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a><span id="intro-update-li" class="nav-intro-badge badge nav-notify"></span></li>
+							<li role="presentation"><a role="menuitem" id="nav-menu-contacts-link" class="nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fas fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a><span id="intro-update-li" class="nav-intro-badge badge nav-notify"></span></li>
 							{{/if}}
 							{{if $nav.manage}}
-							<li role="presentation"><a role="menuitem" id="nav-manage-link" class="nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fa fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-manage-link" class="nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fas fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
 							{{/if}}
-							<li role="presentation"><a role="menuitem" id="nav-directory-link" class="nav-link {{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>{{$nav.directory.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-directory-link" class="nav-link {{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}"><i class="fas fa-sitemap fa-fw" aria-hidden="true"></i>{{$nav.directory.1}}</a></li>
 							<li role="presentation" class="divider"></li>
 							{{if $nav.apps}}
-							<li role="presentation"><a role="menuitem" id="nav-apps-link" class="nav-link {{$nav.apps.2}} {{$sel.manage}}" href="{{$nav.apps.0}}" title="{{$nav.apps.3}}" ><i class="fa fa-puzzle-piece fa-fw" aria-hidden="true"></i> {{$nav.apps.1}}</a>
+							<li role="presentation"><a role="menuitem" id="nav-apps-link" class="nav-link {{$nav.apps.2}} {{$sel.manage}}" href="{{$nav.apps.0}}" title="{{$nav.apps.3}}" ><i class="fas fa-puzzle-piece fa-fw" aria-hidden="true"></i> {{$nav.apps.1}}</a>
 							<li role="presentation" class="divider"></li>
 							{{/if}}
 							{{if $nav.help}}
-							<li role="presentation"><a role="menuitem" id="nav-help-link" class="nav-link {{$nav.help.2}}" href="{{$nav.help.0}}" title="{{$nav.help.3}}" ><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> {{$nav.help.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-help-link" class="nav-link {{$nav.help.2}}" href="{{$nav.help.0}}" title="{{$nav.help.3}}" ><i class="fas fa-question-circle fa-fw" aria-hidden="true"></i> {{$nav.help.1}}</a></li>
 							{{/if}}
 							{{if $nav.settings}}
-							<li role="presentation"><a role="menuitem" id="nav-settings-link" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-settings-link" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fas fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
 							{{/if}}
 							{{if $nav.admin}}
-							<li role="presentation"><a accesskey="a" role="menuitem" id="nav-admin-link" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
+							<li role="presentation"><a accesskey="a" role="menuitem" id="nav-admin-link" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fas fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
 							{{/if}}
 							{{if $nav.tos}}
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" id="nav-tos-link" class="nav-link {{$nav.tos.2}}" href="{{$nav.tos.0}}" title="{{$nav.tos.3}}" ><i class="fa fa-file-text" aria-hidden="true"></i> {{$nav.tos.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-tos-link" class="nav-link {{$nav.tos.2}}" href="{{$nav.tos.0}}" title="{{$nav.tos.3}}" ><i class="fas fa-file-alt" aria-hidden="true"></i> {{$nav.tos.1}}</a></li>
 							{{/if}}
 							<li role="presentation" class="divider"></li>
 							{{if $nav.logout}}
-							<li role="presentation"><a role="menuitem" id="nav-logout-link" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fa fa-sign-out fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-logout-link" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fas fa-sign-out-alt fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
 							{{else}}
-							<li role="presentation"><a role="menuitem" id="nav-login-link" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fa fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-login-link" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fas fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
 							{{/if}}
 						</ul>
 					</li>{{* End of userinfo dropdown menu *}}
@@ -199,27 +199,27 @@
 						<li role="menuitem" class="list-group-item"><a role="menuitem" class="{{$usermenu.2}}" href="{{$usermenu.0}}" title="{{$usermenu.3}}">{{$usermenu.1}}</a></li>
 						{{/foreach}}
 						{{if $nav.notifications}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fas fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
 						{{/if}}
 						{{if $nav.contacts}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fa fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fas fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a></li>
 						{{/if}}
 						{{if $nav.messages}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fas fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}}</a></li>
 						{{/if}}
 						{{if $nav.manage}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fa fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fas fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
 						{{/if}}
 						{{if $nav.settings}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fas fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
 						{{/if}}
 						{{if $nav.admin}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fas fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
 						{{/if}}
 						{{if $nav.logout}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fa fa-sign-out fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fas fa-sign-out-alt fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
 						{{else}}
-						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fa fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
+						<li role="presentation" class="list-group-item"><a role="menuitem" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fas fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
 						{{/if}}
 					</ul>
 				</div>
@@ -245,12 +245,12 @@
 				<li role="presentation">
 					<a href="login?mode=none" id="nav-login"
 						data-toggle="tooltip" aria-label="{{$nav.login.3}}" title="{{$nav.login.3}}">
-							<i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>
+							<i class="fas fa-sign-in-alt fa-fw" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li role="presentation">
 					<a href="{{$nav.about.0}}" id="nav-about" data-toggle="tooltip" aria-label="{{$nav.about.3}}" title="{{$nav.about.3}}">
-						<i class="fa fa-info fa-fw" aria-hidden="true"></i>
+						<i class="fas fa-info fa-fw" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>

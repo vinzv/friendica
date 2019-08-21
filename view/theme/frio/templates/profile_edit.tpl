@@ -7,13 +7,13 @@
 		<ul class="nav nav-pills preferences">
 			<li class="dropdown pull-right">
 				<button type="button" class="btn btn-link btn-sm dropdown-toggle" id="profile-edit-links-dropdown" data-toggle="dropdown" aria-expanded="false">
-					<i class="fa fa-angle-down"  aria-hidden="true"></i>&nbsp;{{$profile_action}}
+					<i class="fas fa-angle-down"  aria-hidden="true"></i>&nbsp;{{$profile_action}}
 				</button>
 				<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="profile-edit-links-dropdown">
-					<li role="presentation"><a role="menuitem" href="{{$profpiclink}}" id="profile-photo_upload-link" title="{{$profpic}}"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{{$profpic}}</a></li>
-					<li role="presentation"><button role="menuitem" type="button" class="btn-link" id="profile-photo_upload-link-new" title="{{$lbl_profile_photo}}" onclick="openClose('profile-photo-upload-section');"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{{$lbl_profile_photo}}</button></li>
+					<li role="presentation"><a role="menuitem" href="{{$profpiclink}}" id="profile-photo_upload-link" title="{{$profpic}}"><i class="fas fa-user" aria-hidden="true"></i>&nbsp;{{$profpic}}</a></li>
+					<li role="presentation"><button role="menuitem" type="button" class="btn-link" id="profile-photo_upload-link-new" title="{{$lbl_profile_photo}}" onclick="openClose('profile-photo-upload-section');"><i class="fas fa-user" aria-hidden="true"></i>&nbsp;{{$lbl_profile_photo}}</button></li>
 					{{if ! $is_default}}
-					<li role="presentation" class="nav-item"><a role="menuitem" href="profperm/{{$profile_id}}" id="profile-edit-visibility-link" title="{{$editvis}}"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;{{$editvis}}</a>
+					<li role="presentation" class="nav-item"><a role="menuitem" href="profperm/{{$profile_id}}" id="profile-edit-visibility-link" title="{{$editvis}}"><i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;{{$editvis}}</a>
 					</li>
 					{{/if}}
 					<li role="presentation" class="divider"></li>
@@ -25,7 +25,7 @@
 					{{/if}}
 					{{if !$is_default}}
 					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" href="{{$profile_drop_link}}" id="profile-edit-drop-link" title="{{$del_prof}}"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;{{$del_prof}}</a></li>
+					<li role="presentation"><a role="menuitem" href="{{$profile_drop_link}}" id="profile-edit-drop-link" title="{{$del_prof}}"><i class="fas fa-trash-alt" aria-hidden="true"></i>&nbsp;{{$del_prof}}</a></li>
 					{{/if}}
 				</ul>
 			</li>
@@ -40,7 +40,7 @@
 		<input type="hidden" name="profile" value="{{$profile_name.2}}" />
 
 		<div id="profile-photo-upload-section" class="panel">
-			<a id="profile-photo-upload-close" class="close pull-right" onclick="openClose('profile-photo-upload-section');"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<a id="profile-photo-upload-close" class="close pull-right" onclick="openClose('profile-photo-upload-section');"><i class="fas fa-times" aria-hidden="true"></i></a>
 			<div id="profile-photo-upload-wrapper">
 				<label id="profile-photo-upload-label" for="profile-photo-upload">{{$lbl_profile_photo}}:</label>
 				<input name="userfile" type="file" id="profile-photo-upload" size="48" />

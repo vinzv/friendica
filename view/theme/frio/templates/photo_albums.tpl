@@ -7,7 +7,7 @@
 	{{if $can_post}}
 		<div class="photos-upload-link">
 			<a href="{{$upload.1}}" title="{{$upload.0}}" class="widget-action faded-icon" data-toggle="tooltip">
-				<i class="fa fa-plus"></i>
+				<i class="fas fa-plus"></i>
 			</a>
 		</div>
 		{{/if}}

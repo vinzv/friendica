@@ -5,7 +5,7 @@
 	</div>
 	<div id="profile-listing-new-link-wrapper" class="pull-right" >
 		<a href="{{$cr_new_link}}" id="profile-listing-new-link" class="page-action faded-icon" title="{{$cr_new}}" data-toggle="tooltip">
-		<i class="fa fa-plus"></i></a>
+		<i class="fas fa-plus"></i></a>
 	</div>
 
 	<div class="section-content-wrapper">

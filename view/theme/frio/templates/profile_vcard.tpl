@@ -10,7 +10,7 @@
 		<div class="tool visible-lg visible-md">
 			{{if $profile.edit}}
 			<div class="action">
-				<a class="" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}"><i class="fa fa-pencil-square-o"></i></a>
+				<a class="" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}"><i class="far fa-edit"></i></a>
 			</div>
 			{{else}}
 				{{if $profile.menu}}
@@ -56,12 +56,12 @@
 			<div id="dfrn-request-link-button">
 				{{if $unfollow_link}}
 				<a id="dfrn-request-link" class="btn btn-labeled btn-primary btn-sm" href="{{$unfollow_link}}">
-					<span class=""><i class="fa fa-user-times"></i></span>
+					<span class=""><i class="fas fa-user-times"></i></span>
 					<span class="">{{$unfollow}}</span>
 				</a>
 				{{else}}
 				<a id="dfrn-request-link" class="btn btn-labeled btn-primary btn-sm" href="{{$follow_link}}">
-					<span class=""><i class="fa fa-user-plus"></i></span>
+					<span class=""><i class="fas fa-user-plus"></i></span>
 					<span class="">{{$follow}}</span>
 				</a>
 				{{/if}}
@@ -70,7 +70,7 @@
 			{{if $wallmessage_link}}
 			<div id="wallmessage-link-botton">
 				<button type="button" id="wallmessage-link" class="btn btn-labeled btn-primary btn-sm" onclick="openWallMessage('{{$wallmessage_link}}')">
-					<span class=""><i class="fa fa-envelope"></i></span>
+					<span class=""><i class="fas fa-envelope"></i></span>
 					<span class="">{{$wallmessage}}</span>
 				</button>
 			</div>
@@ -82,7 +82,7 @@
 
 		{{if $location}}
 		<div class="location detail">
-			<span class="location-label icon"><i class="fa fa-map-marker"></i></span>
+			<span class="location-label icon"><i class="fas fa-map-marker-alt"></i></span>
 			<span class="adr">
 				{{if $profile.address}}<span class="street-address p-street-address">{{$profile.address nofilter}}</span>{{/if}}
 				<span class="city-state-zip">
@@ -97,14 +97,14 @@
 
 		{{if $profile.xmpp}}
 		<div class="xmpp">
-			<span class="xmpp-label icon"><i class="fa fa-comments"></i></span>
+			<span class="xmpp-label icon"><i class="fas fa-comments"></i></span>
 			<span class="xmpp-data"><a href="xmpp:{{$profile.xmpp}}" rel="me" target="_blank">{{include file="sub/punct_wrap.tpl" text=$profile.xmpp}}</a></span>
 		</div>
 		{{/if}}
 
 		{{if $gender}}
 		<div class="mf detail">
-			<span class="gender-label icon"><i class="fa fa-venus-mars"></i></span>
+			<span class="gender-label icon"><i class="fas fa-venus-mars"></i></span>
 			<span class="p-gender">{{$profile.gender}}</span>
 		</div>
 		{{/if}}
@@ -117,14 +117,14 @@
 
 		{{if $marital}}
 		<div class="marital detail">
-			<span class="marital-label icon"><i class="fa fa-heart"></i></span>
+			<span class="marital-label icon"><i class="fas fa-heart"></i></span>
 			<span class="marital-text icon">{{$profile.marital}}</span>
 		</div>
 		{{/if}}
 
 		{{if $homepage}}
 		<div class="homepage detail">
-			<span class="homepage-label icon"><i class="fa fa-external-link-square"></i></span>
+			<span class="homepage-label icon"><i class="fas fa-external-link-square-alt"></i></span>
 			<span class="homepage-url u-url"><a href="{{$profile.homepage}}" rel="me" target="_blank">{{include file="sub/punct_wrap.tpl" text=$profile.homepage}}</a></span>
 		</div>
 		{{/if}}

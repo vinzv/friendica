@@ -39,13 +39,13 @@
 			<div id="dfrn-request-link-button">
 				{{if $follow_link}}
 					<a id="dfrn-request-link" class="btn btn-labeled btn-primary btn-sm" href="{{$follow_link}}"">
-						<span class=""><i class="fa fa-user-plus"></i></span>
+						<span class=""><i class="fas fa-user-plus"></i></span>
 						<span class="">{{$follow}}</span>
 					</a>
 				{{/if}}
 				{{if $unfollow_link}}
 					<a id="dfrn-request-link" class="btn btn-labeled btn-primary btn-sm" href="{{$unfollow_link}}">
-						<span class=""><i class="fa fa-user-times"></i></span>
+						<span class=""><i class="fas fa-user-times"></i></span>
 						<span class="">{{$unfollow}}</span>
 					</a>
 				{{/if}}
@@ -53,7 +53,7 @@
 			{{if $wallmessage_link}}
 				<div id="wallmessage-link-botton">
 					<button type="button" id="wallmessage-link" class="btn btn-labeled btn-primary btn-sm" onclick="openWallMessage('{{$wallmessage_link}}')">
-						<span class=""><i class="fa fa-envelope"></i></span>
+						<span class=""><i class="fas fa-envelope"></i></span>
 						<span class="">{{$wallmessage}}</span>
 					</button>
 				</div>

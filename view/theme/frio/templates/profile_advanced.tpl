@@ -6,7 +6,7 @@
 	<ul class="nav nav-pills preferences">
 		<li class="pull-right">
 			<a class="btn btn-link btn-sm" type="button" id="profile-edit-link" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}">
-				<i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;{{$profile.edit.1}}
+				<i class="far fa-edit" aria-hidden="true"></i>&nbsp;{{$profile.edit.1}}
 			</a>
 		</li>
 	</ul>

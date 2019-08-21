@@ -1,7 +1,7 @@
 
 <div id="acl-wrapper">
 	<div class="form-group form-group-search">
-		<button id="acl-showall" class="btn btn-block btn-default"><i class="fa fa-globe"></i> {{$showall}}</button>
+		<button id="acl-showall" class="btn btn-block btn-default"><i class="fas fa-globe"></i> {{$showall}}</button>
 	</div>
 	<div class="form-group form-group-search">
 		<input type="text" id="acl-search" class="form-control form-search">

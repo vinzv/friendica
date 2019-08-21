@@ -49,8 +49,8 @@
 								<td>{{$u.name}}</td>
 								<td>{{$u.email}}</td>
 								<td>
-									<a href="{{$baseurl}}/regmod/allow/{{$u.hash}}" class="admin-settings-action-link" title="{{$approve}}"><i class="fa fa-check" aria-hidden="true"></i></a>
-									<a href="{{$baseurl}}/regmod/deny/{{$u.hash}}" class="admin-settings-action-link" title="{{$deny}}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+									<a href="{{$baseurl}}/regmod/allow/{{$u.hash}}" class="admin-settings-action-link" title="{{$approve}}"><i class="fas fa-check" aria-hidden="true"></i></a>
+									<a href="{{$baseurl}}/regmod/deny/{{$u.hash}}" class="admin-settings-action-link" title="{{$deny}}"><i class="far fa-trash-alt" aria-hidden="true"></i></a>
 								</td>
 							</tr>
 							{{if $u.note}}
@@ -73,10 +73,10 @@
 							</div>
 							<div class="col-xs-9 admin-settings-footer-elements text-right">
 								<button type="submit" name="page_users_deny" value="1" class="btn btn-primary">
-									<i class="fa fa-trash-o" aria-hidden="true"></i> {{$deny}}
+									<i class="far fa-trash-alt" aria-hidden="true"></i> {{$deny}}
 								</button>
 								<button type="submit" name="page_users_approve" value="1" class="btn btn-warinig">
-									<i class="fa fa-check" aria-hidden="true"></i> {{$approve}}
+									<i class="fas fa-check" aria-hidden="true"></i> {{$approve}}
 								</button>
 							</div>
 						</div>
@@ -180,8 +180,8 @@
 											" title="{{$u.account_type}}">
 										</i>
 										{{/if}}
-										{{if $u.is_admin}}<i class="fa fa-user-md text-primary" title="{{$siteadmin}}"></i>{{/if}}
-										{{if $u.account_expired}}<i class="fa fa-clock-o text-warning" title="{{$accountexpired}}"></i>{{/if}}
+										{{if $u.is_admin}}<i class="fas fa-user-md text-primary" title="{{$siteadmin}}"></i>{{/if}}
+										{{if $u.account_expired}}<i class="far fa-clock text-warning" title="{{$accountexpired}}"></i>{{/if}}
 									</td>
 									{{/if}}
 
@@ -225,15 +225,15 @@
 										{{if $u.is_deletable}}
 											{{if $u.blocked}}
 										<a href="{{$baseurl}}/admin/users/unblock/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$unblock}}">
-											<i class="fa fa-circle-o" aria-hidden="true"></i>
+											<i class="far fa-circle" aria-hidden="true"></i>
 										</a>
 											{{else}}
 										<a href="{{$baseurl}}/admin/users/block/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$block}}">
-											<i class="fa fa-ban" aria-hidden="true"></i>
+											<i class="fas fa-ban" aria-hidden="true"></i>
 										</a>
 											{{/if}}
 										<a href="{{$baseurl}}/admin/users/delete/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$delete}}" onclick="return confirm_delete('{{$confirm_delete}}','{{$u.name}}')">
-											<i class="fa fa-trash" aria-hidden="true"></i>
+											<i class="fas fa-trash-alt" aria-hidden="true"></i>
 										</a>
 										{{else}}
 										&nbsp;
@@ -258,13 +258,13 @@
 							</div>
 							<div class="col-xs-9 admin-settings-footer-elements text-right">
 								<button type="submit" name="page_users_block" value="1" class="btn btn-warning">
-									<i class="fa fa-ban" aria-hidden="true"></i> {{$block}}
+									<i class="fas fa-ban" aria-hidden="true"></i> {{$block}}
 								</button>
 								<button type="submit" name="page_users_unblock" value="1" class="btn btn-default">
-									<i class="fa fa-circle-o" aria-hidden="true"></i> {{$unblock}}
+									<i class="far fa-circle" aria-hidden="true"></i> {{$unblock}}
 								</button>
 								<button type="submit" name="page_users_delete" value="1" class="btn btn-danger" onclick="return confirm_delete('{{$confirm_delete_multi}}')">
-									<i class="fa fa-trash" aria-hidden="true"></i> {{$delete}}
+									<i class="fas fa-trash-alt" aria-hidden="true"></i> {{$delete}}
 								</button>
 							</div>
 						</div>

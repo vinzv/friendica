@@ -4,7 +4,7 @@
 
 {{if $micropro}}
 	<a class="pull-right widget-action faded-icon" id="contact-block-view-contacts" href="profile/{{$nickname}}/contacts">
-		<i class="fa fa-eye" aria-hidden="true"></i>
+		<i class="far fa-eye" aria-hidden="true"></i>
 		<span class="sr-only">{{$viewcontacts}}</span>
 	</a>
 

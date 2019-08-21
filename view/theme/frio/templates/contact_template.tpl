@@ -17,7 +17,7 @@
 
 						{{* Overlay background on hover the avatar picture *}}
 						<div class="contact-photo-overlay">
-							<span class="contact-photo-overlay-content overlay-xs"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+							<span class="contact-photo-overlay-content overlay-xs"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
 						</div>
 					</div>
 				</button>
@@ -45,37 +45,37 @@
 			<div class="contact-actions pull-right nav-pills preferences hidden-xs">
 				{{if $contact.photo_menu.pm}}
 				<button type="button" class="contact-action-link btn-link" onclick="addToModal('{{$contact.photo_menu.pm.1}}'); return false;" data-toggle="tooltip" title="{{$contact.photo_menu.pm.0}}">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<i class="fas fa-envelope" aria-hidden="true"></i>
 				</button>
 				{{/if}}
 				{{if $contact.photo_menu.poke}}
 				<button type="button" class="contact-action-link btn-link" onclick="addToModal('{{$contact.photo_menu.poke.1}}'); return false;" data-toggle="tooltip" title="{{$contact.photo_menu.poke.0}}">
-					<i class="fa fa-heartbeat" aria-hidden="true"></i>
+					<i class="fas fa-heartbeat" aria-hidden="true"></i>
 				</button>
 				{{/if}}
 				{{if $contact.photo_menu.network}}
 				<a class="contact-action-link btn-link" href="{{$contact.photo_menu.network.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.network.0}}">
-					<i class="fa fa-cloud" aria-hidden="true"></i>
+					<i class="fas fa-cloud" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.edit}}
 				<a class="contact-action-link btn-link" href="{{$contact.photo_menu.edit.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.edit.0}}">
-					<i class="fa fa-user" aria-hidden="true"></i>
+					<i class="fas fa-user" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.drop}}
 				<button type="button" class="contact-action-link btn-link" onclick="addToModal('{{$contact.photo_menu.drop.1}}'); return false;" data-toggle="tooltip" title="{{$contact.photo_menu.drop.0}}">
-					<i class="fa fa-user-times" aria-hidden="true"></i>
+					<i class="fas fa-user-times" aria-hidden="true"></i>
 				</button>
 				{{/if}}
 				{{if $contact.photo_menu.follow}}
 				<a class="contact-action-link btn-link" href="{{$contact.photo_menu.follow.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.follow.0}}">
-					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					<i class="fas fa-user-plus" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 				{{if $contact.photo_menu.hide}}
 				<a class="contact-action-link btn-link" href="{{$contact.photo_menu.hide.1}}" data-toggle="tooltip" title="{{$contact.photo_menu.hide.0}}">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="fas fa-times" aria-hidden="true"></i>
 				</a>
 				{{/if}}
 			</div>
@@ -86,9 +86,9 @@
 			<div class="contact-group-actions pull-right nav-pills preferences">
 				<button type="button" class="contact-action-link contact-group-link btn-link" onclick="groupChangeMember({{$contact.change_member.gid}},{{$contact.change_member.cid}},'{{$contact.change_member.sec_token}}'); return true;" data-toggle="tooltip" title="{{$contact.change_member.title}}">
 					{{if $contact.label == "members"}}
-					<i class="fa fa-times-circle" aria-hidden="true"></i>
+					<i class="fas fa-times-circle" aria-hidden="true"></i>
 					{{elseif $contact.label == "contacts"}}
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<i class="fas fa-plus-circle" aria-hidden="true"></i>
 					{{/if}}
 				</button>
 			</div>
@@ -99,7 +99,7 @@
 				<div class="contact-entry-name" id="contact-entry-name-{{$contact.id}}">
 					<h4 class="media-heading"><a href="{{$contact.url}}">{{$contact.name}}</a>
 					{{if $contact.account_type}} <small class="contact-entry-details" id="contact-entry-accounttype-{{$contact.id}}">({{$contact.account_type}})</small>{{/if}}
-					{{if $contact.account_type == 'Forum'}}<i class="fa fa-comments-o" aria-hidden="true"></i>{{/if}}
+					{{if $contact.account_type == 'Forum'}}<i class="far fa-comments" aria-hidden="true"></i>{{/if}}
 					{{* @todo this needs some changing in core because $contact.account_type contains a translated string which may notbe the same in every language *}}
 					</h4>
 				</div>
@@ -144,7 +144,7 @@ We use this part to filter the contacts with jquery.textcomplete *}}
 
 						{{* Overlay background on hover the avatar picture *}}
 						<div class="contact-photo-overlay">
-							<span class="contact-photo-overlay-content overlay-xs"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+							<span class="contact-photo-overlay-content overlay-xs"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
 						</div>
 					</div>
 				</button>
@@ -173,32 +173,32 @@ We use this part to filter the contacts with jquery.textcomplete *}}
 			<div class="contact-actions pull-right nav-pills preferences hidden-xs">
 				{if $photo_menu.pm}
 				<button type="button" class="contact-action-link btn-link" onclick="addToModal('{$photo_menu.pm.1}')" data-toggle="tooltip" title="{$photo_menu.pm.0}">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<i class="fas fa-envelope" aria-hidden="true"></i>
 				</button>
 				{/if}
 				{if $photo_menu.poke}
 				<button type="button" class="contact-action-link btn-link" onclick="addToModal('{$photo_menu.poke.1}')" data-toggle="tooltip" title="{$photo_menu.poke.0}">
-					<i class="fa fa-heartbeat" aria-hidden="true"></i>
+					<i class="fas fa-heartbeat" aria-hidden="true"></i>
 				</button>
 				{/if}
 				{if $photo_menu.network}
 				<a class="contact-action-link btn-link" href="{$photo_menu.network.1}" data-toggle="tooltip" title="{$photo_menu.network.0}">
-					<i class="fa fa-cloud" aria-hidden="true"></i>
+					<i class="fas fa-cloud" aria-hidden="true"></i>
 				</a>
 				{/if}
 				{if $photo_menu.edit}
 				<a class="contact-action-link btn-link" href="{$photo_menu.edit.1}" data-toggle="tooltip" title="{$photo_menu.edit.0}">
-					<i class="fa fa-user" aria-hidden="true"></i>
+					<i class="fas fa-user" aria-hidden="true"></i>
 				</a>
 				{/if}
 				{if $photo_menu.drop}
 				<a class="contact-action-link btn-link" href="{$photo_menu.drop.1}" data-toggle="tooltip" title="{$photo_menu.drop.0}">
-					<i class="fa fa-user-times" aria-hidden="true"></i>
+					<i class="fas fa-user-times" aria-hidden="true"></i>
 				</a>
 				{/if}
 				{if $photo_menu.follow}
 				<a class="contact-action-link btn-link" href="{$photo_menu.follow.1}" data-toggle="tooltip" title="{$photo_menu.follow.0}">
-					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					<i class="fas fa-user-plus" aria-hidden="true"></i>
 				</a>
 				{/if}
 			</div>
@@ -209,9 +209,9 @@ We use this part to filter the contacts with jquery.textcomplete *}}
 			<div class="contact-group-actions pull-right nav-pills preferences">
 				<button type="button" class="contact-action-link btn-link" onclick="groupChangeMember({$contact.change_member.gid},{$contact.change_member.cid},'{$contact.change_member.sec_token}'); return true;" data-toggle="tooltip" title="{$contact.change_member.title}">
 					{if $contact.label == "members"}
-					<i class="fa fa-times-circle" aria-hidden="true"></i>
+					<i class="fas fa-times-circle" aria-hidden="true"></i>
 					{elseif $contact.label == "contacts"}
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<i class="fas fa-plus-circle" aria-hidden="true"></i>
 					{/if}
 				</button>
 			</div>
@@ -222,7 +222,7 @@ We use this part to filter the contacts with jquery.textcomplete *}}
 				<div class="contact-entry-name" id="contact-entry-name-{$id}">
 					<h4 class="media-heading"><a href="{$url}">{$name}</a>
 					{if $account_type} <small class="contact-entry-details" id="contact-entry-accounttype-{$id}">({$account_type})</small>{/if}
-					{if $account_type == 'Forum'}<i class="fa fa-comments-o" aria-hidden="true"></i>{/if}
+					{if $account_type == 'Forum'}<i class="far fa-comments" aria-hidden="true"></i>{/if}
 					{{* @todo this needs some changing in core because $contact.account_type contains a translated string which may notbe the same in every language *}}
 					</h4>
 				</div>

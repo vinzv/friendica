@@ -1,6 +1,6 @@
 {{* The button to open the jot - in This theme we move the button with js to the second nav bar *}}
-<button class="btn btn-sm btn-main pull-right" id="jotOpen" aria-label="{{$new_post}}" title="{{$new_post}}" onclick="jotShow();"><i class="fa fa-pencil-square-o fa-2x"></i></button>
-<a class="btn btn-sm btn-main pull-right" id="composeOpen" href="compose/{{$posttype}}{{if $content}}?body={{$content}}{{/if}}" aria-label="{{$new_post}}" title="{{$new_post}}"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+<button class="btn btn-sm btn-main pull-right" id="jotOpen" aria-label="{{$new_post}}" title="{{$new_post}}" onclick="jotShow();"><i class="far fa-edit fa-2x"></i></button>
+<a class="btn btn-sm btn-main pull-right" id="composeOpen" href="compose/{{$posttype}}{{if $content}}?body={{$content}}{{/if}}" aria-label="{{$new_post}}" title="{{$new_post}}"><i class="far fa-edit fa-2x"></i></a>
 
 <div id="jot-content">
 	<div id="jot-sections">
@@ -93,18 +93,18 @@
 					</div>
 
 					<ul id="profile-jot-submit-wrapper" class="jothidden nav nav-pills">
-						<li role="presentation"><button type="button" class="hidden-xs btn-link icon underline" style="cursor: pointer;" aria-label="{{$eduline}}" title="{{$eduline}}" onclick="insertFormattingToPost('u');"><i class="fa fa-underline"></i></button></li>
-						<li role="presentation"><button type="button" class="hidden-xs btn-link icon italic" style="cursor: pointer;" aria-label="{{$editalic}}" title="{{$editalic}}" onclick="insertFormattingToPost('i');"><i class="fa fa-italic"></i></button></li>
-						<li role="presentation"><button type="button" class="hidden-xs btn-link icon bold" style="cursor: pointer;" aria-label="{{$edbold}}" title="{{$edbold}}" onclick="insertFormattingToPost('b');"><i class="fa fa-bold"></i></button></li>
-						<li role="presentation"><button type="button" class="hidden-xs btn-link icon quote" style="cursor: pointer;" aria-label="{{$edquote}}" title="{{$edquote}}" onclick="insertFormattingToPost('quote');"><i class="fa fa-quote-left"></i></button></li>
-						<li role="presentation"><button type="button" class="btn-link icon" style="cursor: pointer;" aria-label="{{$edurl}}" title="{{$edurl}}" onclick="insertFormattingToPost('url');"><i class="fa fa-link"></i></button></li>
-						<li role="presentation"><button type="button" class="btn-link" id="profile-attach"  ondragenter="return linkDropper(event);" ondragover="return linkDropper(event);" ondrop="linkDrop(event);" onclick="jotGetLink();" title="{{$edattach}}"><i class="fa fa-paperclip"></i></button></li>
-						<li role="presentation"><button type="button" class="btn-link" id="profile-location" onclick="jotGetLocation();" title="{{$setloc}}"><i class="fa fa-map-marker" aria-hidden="true"></i></button></li>
+						<li role="presentation"><button type="button" class="hidden-xs btn-link icon underline" style="cursor: pointer;" aria-label="{{$eduline}}" title="{{$eduline}}" onclick="insertFormattingToPost('u');"><i class="fas fa-underline"></i></button></li>
+						<li role="presentation"><button type="button" class="hidden-xs btn-link icon italic" style="cursor: pointer;" aria-label="{{$editalic}}" title="{{$editalic}}" onclick="insertFormattingToPost('i');"><i class="fas fa-italic"></i></button></li>
+						<li role="presentation"><button type="button" class="hidden-xs btn-link icon bold" style="cursor: pointer;" aria-label="{{$edbold}}" title="{{$edbold}}" onclick="insertFormattingToPost('b');"><i class="fas fa-bold"></i></button></li>
+						<li role="presentation"><button type="button" class="hidden-xs btn-link icon quote" style="cursor: pointer;" aria-label="{{$edquote}}" title="{{$edquote}}" onclick="insertFormattingToPost('quote');"><i class="fas fa-quote-left"></i></button></li>
+						<li role="presentation"><button type="button" class="btn-link icon" style="cursor: pointer;" aria-label="{{$edurl}}" title="{{$edurl}}" onclick="insertFormattingToPost('url');"><i class="fas fa-link"></i></button></li>
+						<li role="presentation"><button type="button" class="btn-link" id="profile-attach"  ondragenter="return linkDropper(event);" ondragover="return linkDropper(event);" ondrop="linkDrop(event);" onclick="jotGetLink();" title="{{$edattach}}"><i class="fas fa-paperclip"></i></button></li>
+						<li role="presentation"><button type="button" class="btn-link" id="profile-location" onclick="jotGetLocation();" title="{{$setloc}}"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></button></li>
 						<!-- TODO: waiting for a better placement
 						<li><button type="button" class="btn-link" id="profile-nolocation" onclick="jotClearLocation();" title="{{$noloc}}">{{$shortnoloc}}</button></li>
 						-->
 
-						<li role="presentation" class="pull-right"><button class="btn btn-primary" type="submit" id="profile-jot-submit" name="submit" ><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> {{$share}}</button></li>
+						<li role="presentation" class="pull-right"><button class="btn btn-primary" type="submit" id="profile-jot-submit" name="submit" ><i class="fas fa-paper-plane fa-fw" aria-hidden="true"></i> {{$share}}</button></li>
 						<li role="presentation" id="character-counter" class="grey jothidden text-info pull-right"></li>
 						<li role="presentation" id="profile-rotator-wrapper" class="pull-right" style="display: {{$visitor}};" >
 							<img role="presentation" id="profile-rotator" src="images/rotator.gif" alt="{{$wait}}" title="{{$wait}}" style="display: none;" />
@@ -124,7 +124,7 @@
 
 				<div id="jot-preview-share" class="minimize" aria-labelledby="jot-preview-lnk" role="tabpanel" aria-hidden="true">
 					<ul id="profile-jot-preview-submit-wrapper" class="jothidden nav nav-pills">
-						<li role="presentation" class="pull-right"><button class="btn btn-primary" type="submit" id="profile-jot-peview-submit" name="submit" ><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> {{$share}}</button></li>
+						<li role="presentation" class="pull-right"><button class="btn btn-primary" type="submit" id="profile-jot-peview-submit" name="submit" ><i class="fas fa-paper-plane fa-fw" aria-hidden="true"></i> {{$share}}</button></li>
 					</ul>
 				</div>
 

@@ -1,7 +1,7 @@
 <!-- TODO => Unknow block -->
 <div class="wall-item-decor" style="display:none;">
 	<span class="icon s22 star {{$item.isstarred}}" id="starred-{{$item.id}}" title="{{$item.star.starred}}">{{$item.star.starred}}</span>
-	{{if $item.lock}}<span class="navicon lock fakelink" onclick="lockview(event, {{$item.id}});" title="{{$item.lock}}"></span><span class="fa fa-lock" aria-hidden="true"></span>{{/if}}
+	{{if $item.lock}}<span class="navicon lock fakelink" onclick="lockview(event, {{$item.id}});" title="{{$item.lock}}"></span><span class="fas fa-lock" aria-hidden="true"></span>{{/if}}
 </div>
 <!-- ./TODO => Unknow block -->
 
@@ -16,50 +16,50 @@
 
 				{{if $item.plink || $item.star || $item.drop.dropping || $item.edpost || $item.subthread}}
 				<li class="dropdown">
-					<button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuTools-{{$item.id}}" aria-haspopup="true" aria-expanded="false"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+					<button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuTools-{{$item.id}}" aria-haspopup="true" aria-expanded="false"><i class="fas fa-angle-down" aria-hidden="true"></i></button>
 
 					<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenuTools-{{$item.id}}">
 						{{if $item.plink}}      {{*link to the original source of the item *}}
 						<li role="menuitem">
-							<a title="{{$item.plink.title}}" href="{{$item.plink.href}}" class="navicon plink"><i class="fa fa-external-link" aria-hidden="true"></i> {{$item.plink.title}}</a>
+							<a title="{{$item.plink.title}}" href="{{$item.plink.href}}" class="navicon plink"><i class="fas fa-external-link-alt" aria-hidden="true"></i> {{$item.plink.title}}</a>
 						</li>
 						{{/if}}
 
 						{{if $item.edpost}} {{* edit the posting *}}
 						<li role="menuitem">
-							<button type="button" href="{{$item.edpost.0}}" title="{{$item.edpost.1}}" class="btn-link navicon pencil"><i class="fa fa-pencil" aria-hidden="true"></i> {{$item.edpost.1}}</button>
+							<button type="button" href="{{$item.edpost.0}}" title="{{$item.edpost.1}}" class="btn-link navicon pencil"><i class="fas fa-pencil-alt" aria-hidden="true"></i> {{$item.edpost.1}}</button>
 						</li>
 						{{/if}}
 
 						{{if $item.tagger}} {{* tag the post *}}
 						<li role="menuitem">
-							<button type="button" id="tagger-{{$item.id}}" onclick="itemTag({{$item.id}});" class="btn-link {{$item.tagger.class}}" title="{{$item.tagger.add}}"><i class="fa fa-tag" aria-hidden="true"></i> {{$item.tagger.add}}</button>
+							<button type="button" id="tagger-{{$item.id}}" onclick="itemTag({{$item.id}});" class="btn-link {{$item.tagger.class}}" title="{{$item.tagger.add}}"><i class="fas fa-tag" aria-hidden="true"></i> {{$item.tagger.add}}</button>
 						</li>
 						{{/if}}
 
 						{{if $item.filer}}
 						<li role="menuitem">
-							<button type="button" id="filer-{{$item.id}}" onclick="itemFiler({{$item.id}});" class="btn-link filer-item filer-icon" title="{{$item.filer}}"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;{{$item.filer}}</button>
+							<button type="button" id="filer-{{$item.id}}" onclick="itemFiler({{$item.id}});" class="btn-link filer-item filer-icon" title="{{$item.filer}}"><i class="fas fa-folder" aria-hidden="true"></i>&nbsp;{{$item.filer}}</button>
 						</li>
 						{{/if}}
 
 						{{if $item.star}}
 						<li role="menuitem">
-							<button type="button" id="star-{{$item.id}}" onclick="dostar({{$item.id}});" class="btn-link {{$item.star.classdo}}" title="{{$item.star.do}}"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;{{$item.star.do}}</button>
-							<button type="button" id="unstar-{{$item.id}}" onclick="dostar({{$item.id}});" class="btn-link {{$item.star.classundo}}" title="{{$item.star.undo}}"><i class="fa fa-star" aria-hidden="true"></i>&nbsp;{{$item.star.undo}}</button>
+							<button type="button" id="star-{{$item.id}}" onclick="dostar({{$item.id}});" class="btn-link {{$item.star.classdo}}" title="{{$item.star.do}}"><i class="far fa-star" aria-hidden="true"></i>&nbsp;{{$item.star.do}}</button>
+							<button type="button" id="unstar-{{$item.id}}" onclick="dostar({{$item.id}});" class="btn-link {{$item.star.classundo}}" title="{{$item.star.undo}}"><i class="fas fa-star" aria-hidden="true"></i>&nbsp;{{$item.star.undo}}</button>
 						</li>
 						{{/if}}
 
 						{{if $item.subthread}}
 						<li role="menuitem">
-							<button type="button" id="subthread-{{$item.id}}" onclick="{{$item.subthread.action}}" class="btn-link" title="{{$item.subthread.title}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;{{$item.subthread.title}}</button>
+							<button type="button" id="subthread-{{$item.id}}" onclick="{{$item.subthread.action}}" class="btn-link" title="{{$item.subthread.title}}"><i class="fas fa-plus" aria-hidden="true"></i>&nbsp;{{$item.subthread.title}}</button>
 						</li>
 						{{/if}}
 
 						{{if $item.drop.dropping}}
 						<li role="separator" class="divider"></li>
 						<li role="menuitem">
-							<button type="button" class="btn-link navicon delete" onclick="dropItem('item/drop/{{$item.id}}', 'item-{{$item.guid}}');" title="{{$item.drop.delete}}"><i class="fa fa-trash" aria-hidden="true"></i> {{$item.drop.delete}}</button>
+							<button type="button" class="btn-link navicon delete" onclick="dropItem('item/drop/{{$item.id}}', 'item-{{$item.guid}}');" title="{{$item.drop.delete}}"><i class="fas fa-trash-alt" aria-hidden="true"></i> {{$item.drop.delete}}</button>
 						</li>
 						{{/if}}
 					</ul>
@@ -90,7 +90,7 @@
 			<div role="heading " class="contact-info hidden-sm hidden-xs media-body"><!-- <= For computer -->
 				<h4 class="media-heading"><a href="{{$item.profile_url}}" title="{{$item.linktitle}}" class="wall-item-name-link userinfo"><span class="wall-item-name {{$item.sparkle}}">{{$item.name}}</span></a>
 					{{if $item.owner_url}}{{$item.via}} <a href="{{$item.owner_url}}" target="redir" title="{{$item.olinktitle}}" class="wall-item-name-link userinfo"><span class="wall-item-name {{$item.osparkle}}" id="wall-item-ownername-{{$item.id}}">{{$item.owner_name}}</span></a>{{/if}}
-					{{if $item.lock}}<span class="navicon lock fakelink" onClick="lockview(event, {{$item.id}});" title="{{$item.lock}}">&nbsp;<small><i class="fa fa-lock" aria-hidden="true"></i></small></span>{{/if}}
+					{{if $item.lock}}<span class="navicon lock fakelink" onClick="lockview(event, {{$item.id}});" title="{{$item.lock}}">&nbsp;<small><i class="fas fa-lock" aria-hidden="true"></i></small></span>{{/if}}
 
 					<div class="additional-info text-muted">
 						<div id="wall-item-ago-{{$item.id}}" class="wall-item-ago">
@@ -141,11 +141,11 @@
 				<div class="wall-item-tags">
 			{{if !$item.suppress_tags}}
 				{{foreach $item.hashtags as $tag}}
-					<span class="tag label btn-info sm">{{$tag nofilter}} <i class="fa fa-bolt" aria-hidden="true"></i></span>
+					<span class="tag label btn-info sm">{{$tag nofilter}} <i class="fas fa-bolt" aria-hidden="true"></i></span>
 				{{/foreach}}
 
 				{{foreach $item.mentions as $tag}}
-					<span class="mention label btn-warning sm">{{$tag nofilter}} <i class="fa fa-user" aria-hidden="true"></i></span>
+					<span class="mention label btn-warning sm">{{$tag nofilter}} <i class="fas fa-user" aria-hidden="true"></i></span>
 				{{/foreach}}
 			{{/if}}
 
@@ -166,7 +166,7 @@
 				<span class="wall-item-actions-left">
 					<!--comment this out to try something different {{if $item.threaded}}{{if $item.comment}}
 					<div id="button-reply" class="pull-left">
-						<button type="button" class="btn-link" id="comment-{{$item.id}}" onclick="openClose('item-comments-{{$item.id}}'); commentExpand({{$item.id}});"><i class="fa fa-reply" title="{{$item.switchcomment}}"></i> </span>
+						<button type="button" class="btn-link" id="comment-{{$item.id}}" onclick="openClose('item-comments-{{$item.id}}'); commentExpand({{$item.id}});"><i class="fas fa-reply" title="{{$item.switchcomment}}"></i> </span>
 					</div>
 					{{/if}}{{/if}}-->
 
@@ -200,7 +200,7 @@
 							{{if $item.vote.like OR $item.vote.dislike OR $item.comment}}
 					<span role="presentation" class="separator">•</span>
 							{{/if}}
-					<button type="button" class="btn btn-default" id="share-{{$item.id}}" title="{{$item.vote.share.0}}" onclick="jotShare({{$item.id}});"><i class="fa fa-retweet" aria-hidden="true"></i>&nbsp;{{$item.vote.share.0}}</button>
+					<button type="button" class="btn btn-default" id="share-{{$item.id}}" title="{{$item.vote.share.0}}" onclick="jotShare({{$item.id}});"><i class="fas fa-retweet" aria-hidden="true"></i>&nbsp;{{$item.vote.share.0}}</button>
 						{{/if}}
 					{{/if}}
 					<img id="like-rotator-{{$item.id}}" class="like-rotator" src="images/rotator.gif" alt="{{$item.wait}}" title="{{$item.wait}}" style="display: none;" />
@@ -211,9 +211,9 @@
 					{{* Event attendance buttons *}}
 				{{if $item.isevent}}
 					<span class="vote-event">
-						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendyes.self}} active" aria-pressed="true{{/if}}" id="attendyes-{{$item.id}}" title="{{$item.attend.0}}" onclick="doLikeAction({{$item.id}}, 'attendyes');"><i class="fa fa-check" aria-hidden="true"><span class="sr-only">{{$item.attend.0}}</span></i></button>
-						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendno.self}} active" aria-pressed="true{{/if}}" id="attendno-{{$item.id}}" title="{{$item.attend.1}}" onclick="doLikeAction({{$item.id}}, 'attendno');"><i class="fa fa-times" aria-hidden="true"><span class="sr-only">{{$item.attend.1}}</span></i></button>
-						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendmaybe.self}} active" aria-pressed="true{{/if}}" id="attendmaybe-{{$item.id}}" title="{{$item.attend.2}}" onclick="doLikeAction({{$item.id}}, 'attendmaybe');"><i class="fa fa-question" aria-hidden="true"><span class="sr-only">{{$item.attend.2}}</span></i></button>
+						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendyes.self}} active" aria-pressed="true{{/if}}" id="attendyes-{{$item.id}}" title="{{$item.attend.0}}" onclick="doLikeAction({{$item.id}}, 'attendyes');"><i class="fas fa-check" aria-hidden="true"><span class="sr-only">{{$item.attend.0}}</span></i></button>
+						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendno.self}} active" aria-pressed="true{{/if}}" id="attendno-{{$item.id}}" title="{{$item.attend.1}}" onclick="doLikeAction({{$item.id}}, 'attendno');"><i class="fas fa-times" aria-hidden="true"><span class="sr-only">{{$item.attend.1}}</span></i></button>
+						<button type="button" class="btn btn-defaultbutton-event{{if $item.responses.attendmaybe.self}} active" aria-pressed="true{{/if}}" id="attendmaybe-{{$item.id}}" title="{{$item.attend.2}}" onclick="doLikeAction({{$item.id}}, 'attendmaybe');"><i class="fas fa-question" aria-hidden="true"><span class="sr-only">{{$item.attend.2}}</span></i></button>
 					</span>
 				{{/if}}
 

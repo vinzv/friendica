@@ -37,7 +37,7 @@
 		<div id="poke-content-wrapper-end"></div>
 
 		<div id="poke-submit-wrapper">
-			<button class="btn btn-primary pull-right" type="submit" name="submit" value="{{$submit}}"><i class="fa fa-slideshare"></i>&nbsp;{{$submit}}</button>
+			<button class="btn btn-primary pull-right" type="submit" name="submit" value="{{$submit}}"><i class="fab fa-slideshare"></i>&nbsp;{{$submit}}</button>
 		</div>
 
 		<div id="poke-submit-wrapper-end"></div>

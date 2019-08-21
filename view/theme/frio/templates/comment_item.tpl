@@ -15,27 +15,27 @@
 		<p class="comment-edit-bb-{{$id}} comment-icon-list">
 			<span>
 				<button type="button" class="btn btn-sm icon bb-img" style="cursor: pointer;" aria-label="{{$edimg}}" title="{{$edimg}}" data-role="insert-formatting" data-bbcode="img" data-id="{{$id}}">
-					<i class="fa fa-picture-o"></i>
+					<i class="far fa-image"></i>
 				</button>
 				<button type="button" class="btn btn-sm icon bb-attach" style="cursor: pointer;" aria-label="{{$edattach}}" title="{{$edattach}}" ondragenter="return commentLinkDrop(event, {{$id}});" ondragover="return commentLinkDrop(event, {{$id}});" ondrop="commentLinkDropper(event);" onclick="commentGetLink({{$id}}, '{{$prompttext}}');">
-					<i class="fa fa-paperclip"></i>
+					<i class="fas fa-paperclip"></i>
 				</button>
 			</span>
 			<span>
 				<button type="button" class="btn btn-sm icon bb-url" style="cursor: pointer;" aria-label="{{$edurl}}" title="{{$edurl}}" onclick="insertFormatting('url',{{$id}});">
-					<i class="fa fa-link"></i>
+					<i class="fas fa-link"></i>
 				</button>
 				<button type="button" class="btn btn-sm icon underline" style="cursor: pointer;" aria-label="{{$eduline}}" title="{{$eduline}}" onclick="insertFormatting('u',{{$id}});">
-					<i class="fa fa-underline"></i>
+					<i class="fas fa-underline"></i>
 				</button>
 				<button type="button" class="btn btn-sm icon italic" style="cursor: pointer;" aria-label="{{$editalic}}" title="{{$editalic}}" onclick="insertFormatting('i',{{$id}});">
-					<i class="fa fa-italic"></i>
+					<i class="fas fa-italic"></i>
 				</button>
 				<button type="button" class="btn btn-sm icon bold" style="cursor: pointer;" aria-label="{{$edbold}}" title="{{$edbold}}" onclick="insertFormatting('b',{{$id}});">
-					<i class="fa fa-bold"></i>
+					<i class="fas fa-bold"></i>
 				</button>
 				<button type="button" class="btn btn-sm icon quote" style="cursor: pointer;" aria-label="{{$edquote}}" title="{{$edquote}}" onclick="insertFormatting('quote',{{$id}});">
-					<i class="fa fa-quote-left"></i>
+					<i class="fas fa-quote-left"></i>
 				</button>
 			</span>
 		</p>
@@ -55,9 +55,9 @@
 
 		<p class="comment-edit-submit-wrapper">
 {{if $preview}}
-			<button type="button" class="btn btn-defaul btn-sm" onclick="preview_comment({{$id}});" id="comment-edit-preview-link-{{$id}}"><i class="fa fa-eye"></i> {{$preview}}</button>
+			<button type="button" class="btn btn-defaul btn-sm" onclick="preview_comment({{$id}});" id="comment-edit-preview-link-{{$id}}"><i class="far fa-eye"></i> {{$preview}}</button>
 {{/if}}
-			<button type="submit" class="btn btn-primary btn-sm" id="comment-edit-submit-{{$id}}" name="submit"><i class="fa fa-envelope"></i> {{$submit}}</button>
+			<button type="submit" class="btn btn-primary btn-sm" id="comment-edit-submit-{{$id}}" name="submit"><i class="fas fa-envelope"></i> {{$submit}}</button>
 		</p>
 
 		<div class="comment-edit-end clear"></div>

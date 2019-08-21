@@ -6,7 +6,7 @@
 	{{if $new_event.0}}
 	<div class="pull-right" id="new-event-link">
 		<button type="button" class="btn-link page-action faded-icon" onclick="addToModal('{{$new_event.0}}')" title="{{$new_event.1}}" data-toggle="tooltip">
-			<i class="fa fa-plus"></i>
+			<i class="fas fa-plus"></i>
 		</button>
 	</div>
 	{{/if}}
@@ -18,7 +18,7 @@
 			<ul class="nav nav-pills">
 				<li class="dropdown pull-right">
 					<button class="btn btn-link btn-sm dropdown-toggle" type="button" id="event-calendar-views" data-toggle="dropdown" aria-expanded="false">
-						<i class="fa fa-angle-down" aria-hidden="true"></i> {{$view}}
+						<i class="fas fa-angle-down" aria-hidden="true"></i> {{$view}}
 					</button>
 					<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="event-calendar-views">
 						<li role="presentation">
@@ -40,9 +40,9 @@
 
 		{{* The buttons to change the month/weeks/days *}}
 		<div id="fc-fc-header-left" class="btn-group">
-			<button class="btn btn-eventnav" onclick="changeView('prev', false);" title="{{$previous.1}}"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-			<button class="btn btn-eventnav btn-separator" onclick="changeView('next', false);" title="{{$next.1}}"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
-			<button class="btn btn-eventnav btn-separator" onclick="changeView('today', false);" title="{{$today}}"><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+			<button class="btn btn-eventnav" onclick="changeView('prev', false);" title="{{$previous.1}}"><i class="fas fa-angle-up" aria-hidden="true"></i></button>
+			<button class="btn btn-eventnav btn-separator" onclick="changeView('next', false);" title="{{$next.1}}"><i class="fas fa-angle-down" aria-hidden="true"></i></button>
+			<button class="btn btn-eventnav btn-separator" onclick="changeView('today', false);" title="{{$today}}"><i class="fas fa-bullseye" aria-hidden="true"></i></button>
 		</div>
 
 		{{* The title (e.g. name of the mont/week/day) *}}

@@ -196,7 +196,7 @@ function loadModalTitle() {
 
 	// for event modals we need some speacial handling
 	if($("#modal-body .event-wrapper .event-summary").length) {
-		title = '<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;';
+		title = '<i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;';
 		var eventsum = $("#modal-body .event-wrapper .event-summary").text();
 		title = title + eventsum;
 	}

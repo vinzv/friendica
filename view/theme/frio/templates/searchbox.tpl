@@ -52,9 +52,9 @@ Some parts of this template will be moved by js to other places (see theme.js) -
 		<input type="hidden" name="search" value="{{$s}}" />
 		<button class="btn btn-sm btn-main pull-right" type="submit" name="save" id="search-save" title="{{$save_label}}" aria-label="{{$save_label}}" value="{{$save_label}}" data-toggle="tooltip">
 	{{if $mode == "tag"}}
-			<i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+			<i class="fas fa-plus fa-2x" aria-hidden="true"></i>
 	{{else}}
-			<i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+			<i class="fas fa-save fa-2x" aria-hidden="true"></i>
 	{{/if}}
 			<span class="sr-only">{{$save_label}}</span>
 		</button>
