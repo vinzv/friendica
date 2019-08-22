@@ -1,0 +1,254 @@
+/*
+    Licence    : AGPL
+
+    Created on : 16.08.2019, 00:13:06
+    Author     : vinzv
+*/
+
+header #banner #logo-img,
+.navbar-brand #logo-img {
+    -webkit-mask-image: url('scheme/less-25.png');
+}
+
+.mod-home.is-not-singleuser nav.navbar, .mod-login nav.navbar {
+    background-image: unset;
+}
+
+#topbar-first, .navbar {
+    background-image: linear-gradient(to right, #0b486b 0%, #835581 51%, #f56297 100%);	
+}
+
+/*#topbar-first .dropdown.account > a, #topbar-first .dropdown.account.open > a, #topbar-first .dropdown.account > button, #topbar-first .dropdown.account.open > button, #topbar-first .dropdown.account > button:hover {
+    background: unset;
+}*/
+
+#topbar-first .nav > .account .dropdown-toggle, #topbar-first .dropdown.account.open > button, #topbar-first .dropdown.account.open > button:hover {
+    background: unset;
+}
+
+#topbar-first .nav > li > a:hover, #topbar-first .nav > li > a:focus, #topbar-first .nav > .open > a, nav.navbar .nav > li > a:hover, nav.navbar .nav > li > a:focus {
+    -webkit-box-shadow:inset 0 -4px 0 #fff;
+    -moz-box-shadow:inset 0 -4px 0 #fff;
+    box-shadow:inset 0 -4px 0 #fff;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+#topbar-first .nav > li > a:hover, #topbar-first .nav > li > a:focus, #topbar-first .nav > .open > a, nav.navbar .nav > li > a:hover, nav.navbar .nav > li > a:focus {
+    background: unset;
+    background-color: rgba(255,255,255,0.2);
+}
+
+#topbar-first .nav > .account:hover {
+    -webkit-box-shadow:inset 0 -4px 0 #fff;
+    -moz-box-shadow:inset 0 -4px 0 #fff;
+    box-shadow:inset 0 -4px 0 #fff;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+#topbar-first .dropdown.account.open > :hover {
+    background: #fff;
+}
+
+.account .dropdown-menu li {
+    border-left: 3px solid #fff;
+}
+
+.account .dropdown-menu li:hover {
+    background-color: #f5f5f5 !important;
+    transition: all 0.3s ease;
+}
+
+.account .dropdown-menu li.divider {
+    background-color: #ededed;
+    height: 1px;
+    width: 50%;
+    margin: 9px auto !important;
+}
+
+.account .dropdown-menu li a {
+    color: #0b486b !important;
+}
+
+.nav-pills .dropdown-menu li {
+    border-left: 3px solid #fff;
+}
+
+.nav-pills .dropdown-menu li a,.nav-pills .dropdown-menu li .btn-link {
+    color: #0b486b !important;
+    background: #fff !important;
+}
+
+.nav-pills .dropdown-menu li a:hover, .nav-pills .dropdown-menu li .btn-link:hover {
+    background-color: #f5f5f5 !important;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .dropdown-menu li.divider {
+    background-color: #ededed;
+    height: 1px;
+    width: 50%;
+    margin: 9px auto !important;
+}
+
+.mod-home.is-not-singleuser,
+.mod-login {
+    background-color: #ededed;
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.7) , rgba(0,0,0, 0.4)), url(scheme/less-2.jpg);
+}
+
+.btn-main {
+    color: #0b486b!important;
+    background: unset !important;
+}
+
+.btn-main:hover, .btn-main:focus {
+    background: unset !important;
+}
+
+.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active {
+    background-color: #0b486b !important;
+}
+
+.nav-pills .dropdown-menu,
+.nav-tabs .dropdown-menu,
+.account .dropdown-menu,
+.contact-photo-wrapper .dropdown-menu {
+    background-color: #fff;
+}
+
+#newmember-tab > a {
+    font-size: unset;
+    font-weight: unset;
+    font-style: italic;
+}
+
+/* The Top Nav Bar user menu */
+#myNavmenu li,
+#myNavmenu a {
+    background-color: #f5f5f5;
+    color: #0b486b;
+}
+#myNavmenu a {
+    display: block;
+    height: 2.8em;
+    padding: 10px 15px;
+}
+#myNavmenu .list-group-item {
+    padding: unset;
+}
+/* Forms */
+.form-control {
+    border: 1px solid #ededed;
+}
+.form-control:focus {
+    border: 1px solid #0b486b;
+}
+
+/**
+ * Login page
+ */
+
+#register-link {
+    background: unset;
+    background-image: linear-gradient(to right, #0b486b 0%, #835581 51%, #f56297 100%);
+}
+
+/* jGrowl */
+
+.jGrowl-notification, .jGrowl-closer {
+    font-family: 'Open Sans',sans-serif !important;
+    text-shadow: none !important;
+    border:none !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #ededed !important;
+    color: #0b486b !important;
+    opacity:1 !important;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=(1*100));
+    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=(1*100));
+}
+
+.jGrowl-notification .ui-state-highlight,
+.jGrowl-notification .ui-widget-content .ui-state-highlight,
+.jGrowl-notification .ui-widget-header .ui-state-highlight {
+    border: none !important;
+}
+
+/* Alerts */
+
+/* Mobile display */
+@media (max-width: 600px) {
+	.row {
+	    padding: 0 1em;
+	}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  body {
+	  background-color: #333;
+  }
+  nav.navbar a {
+	  color: #a2b0b9 !important;
+  }
+  .navbar-brand #logo-img {
+	  background-color: #a2b0b9;
+  }
+  #topbar-second {
+	  background-color: #444;
+	  border-bottom: 1px solid #444;
+  }
+  ul.tabs li {
+	  border-bottom: 0 solid #eee;
+  }
+  ul.tabs li a, .btn-main {
+	  color: #eee !important;
+  }
+  .account .dropdown-menu,#topbar-first .dropdown.account.open > :hover {
+	  background-color: #444;
+  }
+  .account .dropdown-menu li {
+	  border-color: #444;
+  }
+  .account .dropdown-menu li:hover {
+	  border-color: #fff;
+  }
+  .account .dropdown-menu li a {
+	  color: #eee !important;
+  }
+  .modal-content {
+	  background-color: #444;
+  }
+  main .nav-tabs > li.active > a, main .nav-tabs > li.active > a:focus, main .nav-tabs > li.active > a:hover {
+	  background-color: #24292d;
+	  border: 1px solid #24292d;
+  }
+  .nav-tabs {
+	  border-color: #24292d;
+  }
+  .panel {
+	  background-color: #444;
+  }
+  .panel .panel-body .wall-item-content {
+	  color: #eee;
+  }
+  .mod-home.is-not-singleuser .login-form > #login-form, .mod-home.is-not-singleuser .login-form > #login-extra-links {
+	  background-color: #24292d !important;
+  }
+  .mod-home.is-not-singleuser .login-content, .mod-login .login-content, .mod-home.is-not-singleuser .login-form > #login-form label {
+	  color: #a2b0b9 !important;
+  }
+  .form-control, input[type="checkbox"] {
+	  background-color: #24292d;
+	  color: #ccc;
+	  border: 1px solid #42484d;
+  }
+}
