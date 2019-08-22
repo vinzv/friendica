@@ -5,11 +5,8 @@
 
 {{if $nav_bg}}{{include file="field_input.tpl" field=$share_string}}{{/if}}
 {{if $nav_bg}}{{include file="field_colorinput.tpl" field=$nav_bg}}{{/if}}
-{{if $nav_bg_left}}{{include file="field_input.tpl" field=$share_string}}{{/if}}
 {{if $nav_bg_left}}{{include file="field_colorinput.tpl" field=$nav_bg_left}}{{/if}}
-{{if $nav_bg_middle}}{{include file="field_input.tpl" field=$share_string}}{{/if}}
 {{if $nav_bg_middle}}{{include file="field_colorinput.tpl" field=$nav_bg_middle}}{{/if}}
-{{if $nav_bg_right}}{{include file="field_input.tpl" field=$share_string}}{{/if}}
 {{if $nav_bg_right}}{{include file="field_colorinput.tpl" field=$nav_bg_right}}{{/if}}
 {{if $nav_icon_color}}{{include file="field_colorinput.tpl" field=$nav_icon_color}}{{/if}}
 {{if $link_color}}{{include file="field_colorinput.tpl" field=$link_color}}{{/if}}
