@@ -141,6 +141,10 @@ header #banner #logo-img,
 #myNavmenu .list-group-item img {
     margin: 10px 0 10px 15px
 }
+.navbar-toggle {
+    padding: 9px 15px 9px 15px;
+    margin-right: 12px;
+}
 /* Forms */
 .form-control {
     border: 1px solid #ededed;
