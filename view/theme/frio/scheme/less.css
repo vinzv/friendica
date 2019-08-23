@@ -138,6 +138,9 @@ header #banner #logo-img,
 #myNavmenu .list-group-item {
     padding: unset;
 }
+#myNavmenu .list-group-item img {
+    margin: 10px 0 10px 15px
+}
 /* Forms */
 .form-control {
     border: 1px solid #ededed;
