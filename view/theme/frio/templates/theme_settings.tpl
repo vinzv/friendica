@@ -130,15 +130,15 @@
 			}
 
 			if ($("#id_frio_navbg_left").length) {
-				$("#id_frio_navbg_left").val(theme.nav_bg);
+				$("#id_frio_navbg_left").val(theme.navbg_left);
 			}
 
 			if ($("#id_frio_navbg_middle").length) {
-				$("#id_frio_navbg_middle").val(theme.nav_bg);
+				$("#id_frio_navbg_middle").val(theme.navbg_middle);
 			}
 
 			if ($("#id_frio_navbg_right").length) {
-				$("#id_frio_navbg_right").val(theme.nav_bg);
+				$("#id_frio_navbg_right").val(theme.navbg_right);
 			}
 
 			if ($("#id_frio_nav_icon_color").length) {
