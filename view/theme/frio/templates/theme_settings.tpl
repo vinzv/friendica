@@ -191,7 +191,7 @@
 			}
 		});
 		// Create colorpickers
-		$("#frio_nav_bg, #frio_navbg_left, #id_frio_navbg_middle, #id_frio_navbg_right, #frio_nav_icon_color, #frio_background_color, #frio_link_color, #frio_login_bg_color").colorpicker({format: 'hex', align: 'left'});
+		$("#frio_nav_bg, #frio_navbg_left, #frio_navbg_middle, #frio_navbg_right, #frio_nav_icon_color, #frio_background_color, #frio_link_color, #frio_login_bg_color").colorpicker({format: 'hex', align: 'left'});
 
 		// show image options when user user starts to type the address of the image
 		$("#id_frio_background_image").keyup(function(){
