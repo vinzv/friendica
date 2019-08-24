@@ -4,7 +4,7 @@
  * Author: Rabuzarus
  *
  * List here all variables which will get overwritten through this scheme
- * Overwrites: nav_bg, nav_icon_color, link_color, background_color, login_bg_color, contentbg_transp
+ * Overwrites: nav_bg, navbg_left, navbg_middle, navbg_right, nav_icon_color, link_color, background_color, login_bg_color, contentbg_transp
  */
 
 	$nav_bg = "#708fa0";

@@ -1,7 +1,7 @@
 <?php
 	/* Licence: AGP
 	 * Author: rabuzarus
-	 * Overwrites: nav_bg, nav_icon_color, link_color, background_color, contentbg_transp, background_image, bg_image_option, link_hover_color
+	 * Overwrites: nav_bg, navbg_left, navbg_middle, navbg_right, nav_icon_color, link_color, background_color, contentbg_transp, background_image, bg_image_option, link_hover_color
 	 */
 
 	$nav_bg = "#000";

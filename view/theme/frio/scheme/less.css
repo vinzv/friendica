@@ -95,7 +95,7 @@ header #banner #logo-img,
 .mod-home.is-not-singleuser,
 .mod-login {
     background-color: #ededed;
-    background-image: linear-gradient(to right, rgba(0,0,0, 0.7) , rgba(0,0,0, 0.4)), url(scheme/less-2.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.7) , rgba(0,0,0, 0.4)), url(scheme/less.jpg);
 }
 
 .btn-main {
