@@ -18,6 +18,9 @@ function theme_post(App $a)
 	if (isset($_POST['frio-settings-submit'])) {
 		PConfig::set(local_user(), 'frio', 'scheme',           $_POST['frio_scheme']           ?? '');
 		PConfig::set(local_user(), 'frio', 'nav_bg',           $_POST['frio_nav_bg']           ?? '');
+		PConfig::set(local_user(), 'frio', 'navbg_left',      $_POST['frio_navbg_left']      ?? '');
+		PConfig::set(local_user(), 'frio', 'navbg_middle',    $_POST['frio_navbg_middle']    ?? '');
+		PConfig::set(local_user(), 'frio', 'navbg_right',     $_POST['frio_navbg_right']     ?? '');
 		PConfig::set(local_user(), 'frio', 'nav_icon_color',   $_POST['frio_nav_icon_color']   ?? '');
 		PConfig::set(local_user(), 'frio', 'link_color',       $_POST['frio_link_color']       ?? '');
 		PConfig::set(local_user(), 'frio', 'background_color', $_POST['frio_background_color'] ?? '');
@@ -38,6 +41,9 @@ function theme_admin_post(App $a)
 	if (isset($_POST['frio-settings-submit'])) {
 		Config::set('frio', 'scheme',           $_POST['frio_scheme']           ?? '');
 		Config::set('frio', 'nav_bg',           $_POST['frio_nav_bg']           ?? '');
+		Config::set('frio', 'navbg_left',      $_POST['frio_navbg_left']      ?? '');
+		Config::set('frio', 'navbg_middle',    $_POST['frio_navbg_middle']    ?? '');
+		Config::set('frio', 'navbg_right',     $_POST['frio_navbg_right']     ?? '');
 		Config::set('frio', 'nav_icon_color',   $_POST['frio_nav_icon_color']   ?? '');
 		Config::set('frio', 'link_color',       $_POST['frio_link_color']       ?? '');
 		Config::set('frio', 'background_color', $_POST['frio_background_color'] ?? '');
@@ -63,6 +69,9 @@ function theme_content(App $a)
 	$arr['scheme']           = PConfig::get(local_user(), 'frio', 'scheme', PConfig::get(local_user(), 'frio', 'schema', $node_scheme));
 	$arr['share_string']     = '';
 	$arr['nav_bg']           = PConfig::get(local_user(), 'frio', 'nav_bg'          , Config::get('frio', 'nav_bg'));
+	$arr['navbg_left']      = PConfig::get(local_user(), 'frio', 'navbg_left'     , Config::get('frio', 'navbg_left'));
+	$arr['navbg_middle']    = PConfig::get(local_user(), 'frio', 'navbg_middle'   , Config::get('frio', 'navbg_middle'));
+	$arr['navbg_right']     = PConfig::get(local_user(), 'frio', 'navbg_right'    , Config::get('frio', 'navbg_right'));
 	$arr['nav_icon_color']   = PConfig::get(local_user(), 'frio', 'nav_icon_color'  , Config::get('frio', 'nav_icon_color'));
 	$arr['link_color']       = PConfig::get(local_user(), 'frio', 'link_color'      , Config::get('frio', 'link_color'));
 	$arr['background_color'] = PConfig::get(local_user(), 'frio', 'background_color', Config::get('frio', 'background_color'));
@@ -84,6 +93,9 @@ function theme_admin(App $a)
 	$arr['scheme']           = Config::get('frio', 'scheme', Config::get('frio', 'schema'));
 	$arr['share_string']     = '';
 	$arr['nav_bg']           = Config::get('frio', 'nav_bg');
+	$arr['navbg_left']      = Config::get('frio', 'navbg_left');
+	$arr['navbg_middle']    = Config::get('frio', 'navbg_middle');
+	$arr['navbg_right']     = Config::get('frio', 'navbg_right');
 	$arr['nav_icon_color']   = Config::get('frio', 'nav_icon_color');
 	$arr['link_color']       = Config::get('frio', 'link_color');
 	$arr['background_color'] = Config::get('frio', 'background_color');
@@ -129,6 +141,9 @@ function frio_form($arr)
 		'$scheme'           => ['frio_scheme', L10n::t('Select color scheme'), $arr['scheme'], '', $scheme_choices],
 		'$share_string'     => ['frio_share_string', L10n::t('Copy or paste schemestring'), $arr['share_string'], L10n::t('You can copy this string to share your theme with others. Pasting here applies the schemestring'), false, false],
 		'$nav_bg'           => array_key_exists('nav_bg', $disable) ? '' : ['frio_nav_bg', L10n::t('Navigation bar background color'), $arr['nav_bg'], '', false],
+		'$navbg_left'      => array_key_exists('navbg_left', $disable) ? '' : ['frio_navbg_left', L10n::t('Navigation bar gradient background color (left)'), $arr['navbg_left'], '', false],
+		'$navbg_middle'    => array_key_exists('navbg_middle', $disable) ? '' : ['frio_navbg_middle', L10n::t('Navigation bar gradient background color (middle)'), $arr['navbg_middle'], '', false],
+		'$navbg_right'     => array_key_exists('navbg_right', $disable) ? '' : ['frio_navbg_right', L10n::t('Navigation bar gradient background color (right)'), $arr['navbg_right'], '', false],
 		'$nav_icon_color'   => array_key_exists('nav_icon_color', $disable) ? '' : ['frio_nav_icon_color', L10n::t('Navigation bar icon color '), $arr['nav_icon_color'], '', false],
 		'$link_color'       => array_key_exists('link_color', $disable) ? '' : ['frio_link_color', L10n::t('Link color'), $arr['link_color'], '', false],
 		'$background_color' => array_key_exists('background_color', $disable) ? '' : ['frio_background_color', L10n::t('Set the background color'), $arr['background_color'], '', false],
