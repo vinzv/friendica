@@ -15,7 +15,7 @@ header #banner #logo-img,
 }
 
 #topbar-first, .navbar {
-    background-image: linear-gradient(to right, #0b486b 0%, #835581 51%, #f56297 100%);	
+    background-image: linear-gradient(to right, $navbg_left 0%, $navbg_middle 51%, $navbg_right 100%);	
 }
 
 /*#topbar-first .dropdown.account > a, #topbar-first .dropdown.account.open > a, #topbar-first .dropdown.account > button, #topbar-first .dropdown.account.open > button, #topbar-first .dropdown.account > button:hover {
@@ -152,7 +152,7 @@ header #banner #logo-img,
 
 #register-link {
     background: unset;
-    background-image: linear-gradient(to right, #0b486b 0%, #835581 51%, #f56297 100%);
+    background-image: linear-gradient(to right, $navbg_left 0%, $navbg_middle 51%, $navbg_right 100%);
 }
 
 /* jGrowl */
