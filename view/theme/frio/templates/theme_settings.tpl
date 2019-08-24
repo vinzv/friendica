@@ -5,9 +5,9 @@
 
 {{if $nav_bg}}{{include file="field_input.tpl" field=$share_string}}{{/if}}
 {{if $nav_bg}}{{include file="field_colorinput.tpl" field=$nav_bg}}{{/if}}
-{{if $nav_bg_left}}{{include file="field_colorinput.tpl" field=$nav_bg_left}}{{/if}}
-{{if $nav_bg_middle}}{{include file="field_colorinput.tpl" field=$nav_bg_middle}}{{/if}}
-{{if $nav_bg_right}}{{include file="field_colorinput.tpl" field=$nav_bg_right}}{{/if}}
+{{if $navbg_left}}{{include file="field_colorinput.tpl" field=$navbg_left}}{{/if}}
+{{if $navbg_middle}}{{include file="field_colorinput.tpl" field=$navbg_middle}}{{/if}}
+{{if $navbg_right}}{{include file="field_colorinput.tpl" field=$navbg_right}}{{/if}}
 {{if $nav_icon_color}}{{include file="field_colorinput.tpl" field=$nav_icon_color}}{{/if}}
 {{if $link_color}}{{include file="field_colorinput.tpl" field=$link_color}}{{/if}}
 
@@ -57,16 +57,16 @@
 				theme.nav_bg = $("#id_frio_nav_bg").val();
 			}
 
-			if ($("#id_frio_nav_bg_left").length) {
-				theme.nav_bg = $("#id_frio_nav_bg_left").val();
+			if ($("#id_frio_navbg_left").length) {
+				theme.nav_bg = $("#id_frio_navbg_left").val();
 			}
 
-			if ($("#id_frio_nav_bg_middle").length) {
-				theme.nav_bg = $("#id_frio_nav_bg_middle").val();
+			if ($("#id_frio_navbg_middle").length) {
+				theme.nav_bg = $("#id_frio_navbg_middle").val();
 			}
 
-			if ($("#id_frio_nav_bg_right").length) {
-				theme.nav_bg = $("#id_frio_nav_bg_right").val();
+			if ($("#id_frio_navbg_right").length) {
+				theme.nav_bg = $("#id_frio_navbg_right").val();
 			}
 
 			if ($("#id_frio_nav_icon_color").length) {
@@ -129,16 +129,16 @@
 				$("#id_frio_nav_bg").val(theme.nav_bg);
 			}
 
-			if ($("#id_frio_nav_bg_left").length) {
-				$("#id_frio_nav_bg_left").val(theme.nav_bg);
+			if ($("#id_frio_navbg_left").length) {
+				$("#id_frio_navbg_left").val(theme.nav_bg);
 			}
 
-			if ($("#id_frio_nav_bg_middle").length) {
-				$("#id_frio_nav_bg_middle").val(theme.nav_bg);
+			if ($("#id_frio_navbg_middle").length) {
+				$("#id_frio_navbg_middle").val(theme.nav_bg);
 			}
 
-			if ($("#id_frio_nav_bg_right").length) {
-				$("#id_frio_nav_bg_right").val(theme.nav_bg);
+			if ($("#id_frio_navbg_right").length) {
+				$("#id_frio_navbg_right").val(theme.nav_bg);
 			}
 
 			if ($("#id_frio_nav_icon_color").length) {
@@ -191,7 +191,7 @@
 			}
 		});
 		// Create colorpickers
-		$("#frio_nav_bg, #frio_nav_bg_left, #id_frio_nav_bg_middle, #id_frio_nav_bg_right, #frio_nav_icon_color, #frio_background_color, #frio_link_color, #frio_login_bg_color").colorpicker({format: 'hex', align: 'left'});
+		$("#frio_nav_bg, #frio_navbg_left, #id_frio_navbg_middle, #id_frio_navbg_right, #frio_nav_icon_color, #frio_background_color, #frio_link_color, #frio_login_bg_color").colorpicker({format: 'hex', align: 'left'});
 
 		// show image options when user user starts to type the address of the image
 		$("#id_frio_background_image").keyup(function(){
