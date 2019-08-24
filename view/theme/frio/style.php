@@ -19,9 +19,9 @@ Config::load('frio');
 // Default to hard-coded values for empty settings
 $scheme           = Config::get('frio', 'scheme', Config::get('frio', 'schema'));
 $nav_bg           = Config::get('frio', 'nav_bg')           ?: '#708fa0';
-$nav_bg_left      = Config::get('frio', 'nav_bg_left')      ?: '#0b486b';
-$nav_bg_middle    = Config::get('frio', 'nav_bg_middle')    ?: '#835581';
-$nav_bg_right     = Config::get('frio', 'nav_bg_right')     ?: '#f56297';
+$navbg_left      = Config::get('frio', 'navbg_left')      ?: '#0b486b';
+$navbg_middle    = Config::get('frio', 'navbg_middle')    ?: '#835581';
+$navbg_right     = Config::get('frio', 'navbg_right')     ?: '#f56297';
 $nav_icon_color   = Config::get('frio', 'nav_icon_color')   ?: '#ffffff';
 $link_color       = Config::get('frio', 'link_color')       ?: '#6fdbe8';
 $background_color = Config::get('frio', 'background_color') ?: '#ededed';
@@ -45,9 +45,9 @@ if ($uid) {
 	// Only override display settings that have actually been set
 	$scheme           = PConfig::get($uid, 'frio', 'scheme', PConfig::get($uid, 'frio', 'schema')) ?: $scheme;
 	$nav_bg           = PConfig::get($uid, 'frio', 'nav_bg')           ?: $nav_bg;
-	$nav_bg_left      = PConfig::get($uid, 'frio', 'nav_bg_left')      ?: $nav_bg_left;
-	$nav_bg_middle    = PConfig::get($uid, 'frio', 'nav_bg_middle')    ?: $nav_bg_middle;
-	$nav_bg_right     = PConfig::get($uid, 'frio', 'nav_bg_right')     ?: $nav_bg_right;
+	$navbg_left      = PConfig::get($uid, 'frio', 'navbg_left')      ?: $navbg_left;
+	$navbg_middle    = PConfig::get($uid, 'frio', 'navbg_middle')    ?: $navbg_middle;
+	$navbg_right     = PConfig::get($uid, 'frio', 'navbg_right')     ?: $navbg_right;
 	$nav_icon_color   = PConfig::get($uid, 'frio', 'nav_icon_color')   ?: $nav_icon_color;
 	$link_color       = PConfig::get($uid, 'frio', 'link_color')       ?: $link_color;
 	$background_color = PConfig::get($uid, 'frio', 'background_color') ?: $background_color;
@@ -162,9 +162,9 @@ $contentbg_transp = $contentbg_transp / 100;
 
 $options = [
 	'$nav_bg'                      => $nav_bg,
-	'$nav_bg_left'                 => $nav_bg_left,
-	'$nav_bg_middle'               => $nav_bg_middle,
-	'$nav_bg_right'                => $nav_bg_right,
+	'$navbg_left'                 => $navbg_left,
+	'$navbg_middle'               => $navbg_middle,
+	'$navbg_right'                => $navbg_right,
 	'$nav_icon_color'              => $nav_icon_color,
 	'$nav_icon_hover_color'        => $nav_icon_hover_color,
 	'$link_color'                  => $link_color,
