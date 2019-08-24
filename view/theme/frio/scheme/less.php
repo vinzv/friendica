@@ -9,6 +9,7 @@
 
 	$nav_icon_color = "#f5f5f5";
 	$link_color = "#0b486b";
+	$login_bg_image = "scheme/less.jpg";
 	$background_color = "#ededed";
 	$contentbg_transp = 95;
 
