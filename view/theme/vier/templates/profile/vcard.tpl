@@ -5,8 +5,12 @@
 		{{if $profile.edit}}
 			<div class="action">
 				<a class="icon s16 edit ttright" href="{{$profile.edit.0}}" title="{{$profile.edit.3}}"><span>{{$profile.edit.1}}</span></a>
+				<a class="icon s16 icon-plus ttright" href="{{$follow_link}}" title="{{$follow}}"><span>{{$follow}}</span></a>
 			</div>
 		{{/if}}
+			<div class="action">
+				<a class="icon s16 icon-plus ttright" href="{{$follow_link}}" title="{{$follow}}"><span>{{$follow}}</span></a>
+			</div>
 	</div>
 
 	{{if $profile.addr}}<div class="p-addr">{{$profile.addr}}</div>{{/if}}
