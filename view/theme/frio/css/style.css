@@ -130,6 +130,10 @@ blockquote {
     border-radius: 10px;
     background-color: #aaa;
     line-height: 1.5;
+    clip-path: url(/view/theme/frio/img/back-to-top-arrow.svg#clipPath);
+    mask-size: cover;
+    width: 1.7em;
+    height: 1.7em;
 }
 
 #item-delete-selected {
