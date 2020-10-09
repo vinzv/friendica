@@ -322,3 +322,7 @@ legend {
 input[type=text].tt-input {
 	box-shadow: none;
 }
+
+#back-to-top {
+	background-color: $nav_icon_color;
+}
